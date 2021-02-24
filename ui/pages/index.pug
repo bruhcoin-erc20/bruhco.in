@@ -1,7 +1,15 @@
 doctype html
 html(lang="en")
     head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        include ../misc/page-head.pug
+        link(rel="stylesheet" href="/assets/css/pages/index.css")
         title BruhCoin
-    body 
+    body
+        include ../base/nav.pug
+        main
+            div(class="hero")
+                div(class="coin")
+                div(class="title") An ERC20 token with an exact supply of 69,420
+                div(class="buttons")
+                    button GET CONTRACT
+                    button GITHUB

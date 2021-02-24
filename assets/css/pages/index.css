@@ -1,0 +1,70 @@
+/*
+BruhCoin website.
+
+Copyright (C) BruhCoin 2021. (http://bruhco.in/)
+Licensed under GNU GPLv3
+*/
+
+body {
+    perspective: 1000px;
+}
+
+main>.hero {
+    background: linear-gradient(45deg, #2196f3, #03a9f4);
+    flex-direction: column;
+}
+
+main>.hero>.coin {
+    background: url(/assets/img/bruhcoin.svg);
+    height: 156px;
+    width: 156px;
+    margin: auto;
+    transform-style: preserve-3d;
+    animation: coin-rotate 2s linear infinite;
+    transform: rotateY(360deg);
+}
+
+main>.hero>.title {
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 900;
+    color: white;
+    margin: auto;
+}
+
+main>.hero>.buttons {
+    margin: auto;
+}
+
+main>.hero>.buttons>button {
+    background: transparent;
+    outline: 0;
+    font-weight: 900;
+    font-family: roboto;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    width: 150px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+main>.hero>.buttons>button:hover {
+    background-color: white;
+    color: black;
+}
+
+main>.hero>.buttons>button:last-child {
+    margin-right: 0;
+}
+
+/* Animations */
+@keyframes coin-rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    360% {
+        transform: rotateY(360deg);
+    }
+}

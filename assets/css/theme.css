@@ -4,3 +4,77 @@ BruhCoin website.
 Copyright (C) BruhCoin 2021. (http://bruhco.in/)
 Licensed under GNU GPLv3
 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;900&display=swap');
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    color: #004A7F;
+}
+
+nav.base {
+    background: white;
+}
+
+nav.base>.logo {
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav.base>.logo>.icon {
+    height: 36px;
+    width: 36px;
+    background-image: url(/assets/img/bruhcoin.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+nav.base>.logo>.title {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1.7em;
+    font-size: 22px;
+    padding-left: 0.5em;
+    box-sizing: border-box;
+}
+
+nav.base>.links {
+    vertical-align: top;
+    float: right;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+nav.base>.links>a {
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #004A7F;
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+nav.base>.links>a:hover, nav.base>.links>a:visited:hover {
+    color: white;
+    background-color: #004A7F;
+}
+
+nav.base>.links>a:last-child {
+    margin-right: 0px;
+}
+
+nav.base>.links>a:visited {
+    color: #004A7F;
+}
+
+nav.base>.logo:visited, nav.base>.logo:focus {
+    color: rgb(32, 32, 32);
+}
+
+main>.hero {
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+}
