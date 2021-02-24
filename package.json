@@ -1,0 +1,15 @@
+{
+  "name": "bruhcoin-website",
+  "version": "1.0.0",
+  "description": "The BruhCoin website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "GPL",
+  "devDependencies": {
+    "pug": "^3.0.0",
+    "webpack": "^5.24.1"
+  }
+}
