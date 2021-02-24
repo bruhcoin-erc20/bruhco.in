@@ -18,4 +18,7 @@ app.use('/assets', express.static(path.join(__dirname, "assets")));
 // Create pages
 app.get('/', api_base.createPugStaticHandler("./ui/pages/index.pug"));
 
+// Error pages
+app.use(api_base.createPugStaticHandler("./ui/pages/404.pug", {}, 404));
+
 app.listen(config.port, ()=>console.log("Bruhco.in service up and running!"));

@@ -1,0 +1,32 @@
+/*
+BruhCoin website.
+
+Copyright (C) BruhCoin 2021. (http://bruhco.in/)
+Licensed under GNU GPLv3
+*/
+
+body {
+    perspective: 1000px;
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    height: calc(100vh - 236px);
+    background: #004A7F;
+    color: white;
+}
+
+main>.error {
+    margin: auto;
+    text-align: center;
+}
+
+main>.error>.code {
+    font-size: 120px;
+    font-weight: bolder;
+}
+
+main>.error>.msg {
+    font-size: 26px;
+}

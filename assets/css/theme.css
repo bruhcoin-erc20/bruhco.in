@@ -118,6 +118,7 @@ footer.bottom {
     padding-left: 7%;
     padding-right: 7%;
     box-sizing: border-box;
+    height: 236px;
 }
 
 footer.bottom>.logo {
@@ -128,6 +129,7 @@ footer.bottom>.logo {
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
+    margin-bottom: 2em;
 }
 
 footer.bottom>.copyright {
@@ -170,4 +172,30 @@ footer.bottom>.aside>.box>a:visited, footer.bottom>.aside>.box>a:active {
 footer.bottom>.aside>.copyright {
     font-size: 14px;
     margin-bottom: 2em;
+}
+
+main>.hero>.buttons {
+    margin: auto;
+}
+
+main .button-flat {
+    background: transparent;
+    outline: 0;
+    font-weight: 900;
+    font-family: roboto;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+main .button-flat:active, main .button-flat:visited {
+    color: white;
+}
+
+main .button-flat:hover {
+    background-color: white;
+    color: black;
 }

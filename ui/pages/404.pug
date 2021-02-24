@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+    head
+        include ../misc/page-head.pug
+        link(rel="stylesheet" href="/assets/css/pages/404.css")
+        title BruhCoin
+    body
+        include ../base/nav.pug
+        main
+            div(class="error")
+                div(class="code") 404
+                div(class="msg") The requested page is not found.
+                a(style="margin-top: 2em;" class="button-flat" href="/") GO HOME
+        include ../base/footer
