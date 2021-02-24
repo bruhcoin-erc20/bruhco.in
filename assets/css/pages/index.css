@@ -7,15 +7,22 @@ Licensed under GNU GPLv3
 
 body {
     perspective: 1000px;
+    overflow-x: hidden;
 }
 
 main>.hero {
-    background: linear-gradient(45deg, #2196f3, #03a9f4);
+    background-image: url(/assets/img/bg/bg0.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     flex-direction: column;
 }
 
 main>.hero>.coin {
-    background: url(/assets/img/bruhcoin.svg);
+    background-image: url(/assets/img/bruhcoin.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 156px;
     width: 156px;
     margin: auto;
@@ -56,6 +63,22 @@ main>.hero>.buttons>button:hover {
 
 main>.hero>.buttons>button:last-child {
     margin-right: 0;
+}
+
+main>.content-pane>.desc>.text {
+    text-align: center;
+    line-height: 2;
+}
+
+main>.content-pane.p1>.icn_supply {
+    height: 100px;
+    width: 100px;
+    background-image: url(/assets/img/symbols/69420_s.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-top: 2em;
 }
 
 /* Animations */
