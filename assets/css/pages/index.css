@@ -38,16 +38,23 @@ main>.hero>.coin>.part {
     animation: none;
 }
 
+main>.hero>.coin {
+    margin-bottom: 4em;
+}
+
 main>.hero>.title {
     font-family: Roboto;
     font-size: 36px;
     font-weight: 900;
     color: white;
     margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 main>.hero>.buttons {
     margin: auto;
+    margin-top: 4em;
 }
 
 main>.hero>.buttons>button {
