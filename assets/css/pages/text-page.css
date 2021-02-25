@@ -1,0 +1,55 @@
+/*
+BruhCoin website.
+
+Copyright (C) BruhCoin 2021. (https://bruhco.in/)
+Licensed under GNU GPLv3
+*/
+
+body {
+    perspective: 1000px;
+    overflow-x: hidden;
+}
+
+main {
+    display: block;
+    min-height: calc(100vh - 236px);
+    background: #eeeeee;
+    color: black;
+}
+
+main>header {
+    height: 230px;
+    width: 100%;
+    background: #004A7F;
+    display: flex;
+}
+
+main>header>.title {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    margin: auto;
+}
+
+main>.content {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    line-height: 1.8;
+}
+
+main>.content>.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(1200px - (30px * 2));
+}
+
+main>.content .code-kvp>.code {
+    font-family: monospace;
+    font-size: 16px;
+    background: wheat;
+    padding: 2px;
+    box-sizing: border-box;
+    border-radius: 3px;
+}

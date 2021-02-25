@@ -1,7 +1,7 @@
 /*
 BruhCoin website.
 
-Copyright (C) BruhCoin 2021. (http://bruhco.in/)
+Copyright (C) BruhCoin 2021. (https://bruhco.in/)
 Licensed under GNU GPLv3
 */
 
@@ -12,7 +12,7 @@ body {
 
 main {
     display: flex;
-    height: calc(100vh - 236px);
+    min-height: calc(100vh - 236px);
     background: #004A7F;
     color: white;
 }

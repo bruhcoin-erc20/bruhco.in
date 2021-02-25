@@ -1,7 +1,7 @@
 /*
 BruhCoin website.
 
-Copyright (C) BruhCoin 2021. (http://bruhco.in/)
+Copyright (C) BruhCoin 2021. (https://bruhco.in/)
 Licensed under GNU GPLv3
 */
 
@@ -17,6 +17,11 @@ app.use('/assets', express.static(path.join(__dirname, "assets")));
 
 // Create pages
 app.get('/', api_base.createPugStaticHandler("./ui/pages/index.pug"));
+app.get('/contract', api_base.createPugStaticHandler("./ui/pages/contract.pug", {
+    contract: config.contract,
+    decimals: 18,
+    symbol: "BRUH"
+}));
 
 // Error pages
 app.use(api_base.createPugStaticHandler("./ui/pages/404.pug", {}, 404));

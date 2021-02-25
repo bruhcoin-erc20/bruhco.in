@@ -1,0 +1,17 @@
+/*
+BruhCoin website.
+
+Copyright (C) BruhCoin 2021. (https://bruhco.in/)
+Licensed under GNU GPLv3
+*/
+
+.code-kvp>.key {
+    display: inline-block;
+    width: 80px;
+}
+
+main>header {
+    background-image: url(/assets/img/bg/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

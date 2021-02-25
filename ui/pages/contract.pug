@@ -1,0 +1,36 @@
+//-- BruhCoin website.
+//-- Copyright (C) BruhCoin 2021. (https://bruhco.in/)
+//-- Licensed under GNU GPLv3
+
+doctype html
+html(lang="en")
+    head
+        include ../misc/page-head.pug
+        link(rel="stylesheet" href="/assets/css/pages/text-page.css")
+        link(rel="stylesheet" href="/assets/css/pages/contract.css")
+        title Contract - BruhCoin
+    body
+        include ../base/nav.pug
+        main
+            header
+                div(class="title") Contract
+            div(class="content")
+                div(class="wrapper")
+                    h2 Adding BruhCoin to your wallet
+                    p
+                        | Ideally, your wallet would provide support for BruhCoin by default. Since BruhCoin is small (as of now), it will likely not show up there.
+                        br
+                        | BruhCoin is an ERC20 token, which means it can be added to your wallet with the following information below:
+                    h3 Contract Information
+                    div(class="code-kvp")
+                        span(class="key") Address: 
+                        span(class="code") #{contract}
+
+                    div(class="code-kvp")
+                        span(class="key") Decimals: 
+                        span(class="code") #{decimals}
+
+                    div(class="code-kvp")
+                        span(class="key") Symbol: 
+                        span(class="code") #{symbol}
+        include ../base/footer
