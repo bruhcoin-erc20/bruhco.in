@@ -1,0 +1,36 @@
+//-- BruhCoin website.
+//-- Copyright (C) BruhCoin 2021. (https://bruhco.in/)
+//-- Licensed under GNU GPLv3
+
+doctype html
+html(lang="en")
+    head
+        include ../misc/page-head.pug
+        link(rel="stylesheet" href="/assets/css/pages/text-page.css")
+        link(rel="stylesheet" href="/assets/css/pages/about.css")
+        title About - BruhCoin
+    body
+        include ../base/nav.pug
+        main
+            header
+                div(class="title") About
+            div(class="content")
+                div(class="wrapper")
+                    h2 About BruhCoin
+                    p
+                        | BruhCoin is a lightweight ERC20 token with a limited supply of 69,420 BRUH. The coin has been founded by 3 developers, namely ziad8787, Sci3ntia, and acdra1n.
+                        br
+                        br
+                        | This token is fully transparent and all source code (including code for our website) is available on our 
+                        a(href="https://github.com/bruhcoin-erc20") GitHub page
+                        | .
+
+                    h3 But why?
+                    p
+                        | We had three goals in mind, which were to develop:
+                        ul 
+                            li a fully transparent token with all development and source code public.
+                            li a memecoin with a limited supply of exactly 69,420 BRUH coins.
+                            li a memecoin to get people laughing at its ridiculous branding and purpose.
+
+        include ../base/footer

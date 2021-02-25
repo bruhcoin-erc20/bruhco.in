@@ -28,6 +28,8 @@ app.get('/faucet', api_base.createPugStaticHandler("./ui/pages/faucet.pug", {
     timeout: 24
 }));
 
+app.get('/about', api_base.createPugStaticHandler("./ui/pages/about.pug"));
+
 // Error pages
 app.use(api_base.createPugStaticHandler("./ui/pages/404.pug", {}, 404));
 
