@@ -1,0 +1,38 @@
+//-- BruhCoin website.
+//-- Copyright (C) BruhCoin 2021. (https://bruhco.in/)
+//-- Licensed under GNU GPLv3
+
+doctype html
+html(lang="en")
+    head
+        include ../misc/page-head.pug
+        link(rel="stylesheet" href="/assets/css/pages/text-page.css")
+        title Faucet - BruhCoin
+    body
+        include ../base/nav.pug
+        main
+            header
+                div(class="title") Faucet
+            div(class="content")
+                div(class="wrapper")
+                    h2 Official BruhCoin Faucet
+                    p
+                        | You may earn small amounts of BRUH through the official BruhCoin faucet.
+                    h3 Rewards
+                    p
+                        b #{reward} BRUH 
+                        | every 
+                        b #{timeout} hours
+                        | .
+                        
+                    h3 Claim your reward
+                    p
+                        i The faucet is not open to the public yet. Please check back later.
+
+                    h3 Donations
+                    p
+                        | In order to keep the faucet alive, it requires donations to operate. These donations will deposited directly into the faucet account for immediate use. Any amount is appreciated, no matter how big or small.
+                        br
+                        br
+                        i The faucet is not active as of now, once it becomes active, the neccessary details will be displayed here.
+        include ../base/footer

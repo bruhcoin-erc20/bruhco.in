@@ -7,6 +7,7 @@ Licensed under GNU GPLv3
 
 body {
     overflow-x: hidden;
+    perspective: 3500px;
 }
 
 main>.hero {
@@ -17,7 +18,7 @@ main>.hero {
     flex-direction: column;
 }
 
-main>.hero>.coin {
+main>.hero>.coin, main>.hero>.coin>.part {
     background-image: url(/assets/img/bruhcoin.svg);
     background-position: center;
     background-size: contain;
@@ -26,8 +27,15 @@ main>.hero>.coin {
     width: 156px;
     margin: auto;
     transform-style: preserve-3d;
-    animation: coin-rotate 2s linear infinite;
+    animation: coin-rotate 8s linear infinite;
     transform: rotateY(360deg);
+}
+
+main>.hero>.coin>.part {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation: none;
 }
 
 main>.hero>.title {

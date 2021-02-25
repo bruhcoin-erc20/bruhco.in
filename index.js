@@ -23,6 +23,11 @@ app.get('/contract', api_base.createPugStaticHandler("./ui/pages/contract.pug", 
     symbol: "BRUH"
 }));
 
+app.get('/faucet', api_base.createPugStaticHandler("./ui/pages/faucet.pug", {
+    reward: "0.0000000001",
+    timeout: 24
+}));
+
 // Error pages
 app.use(api_base.createPugStaticHandler("./ui/pages/404.pug", {}, 404));
 

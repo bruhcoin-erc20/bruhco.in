@@ -14,7 +14,7 @@ main {
     display: block;
     min-height: calc(100vh - 236px);
     background: #eeeeee;
-    color: black;
+    color: #004A7F;
 }
 
 main>header {
@@ -33,8 +33,8 @@ main>header>.title {
 }
 
 main>.content {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     display: flex;
     line-height: 1.8;
 }
@@ -45,7 +45,7 @@ main>.content>.wrapper {
     max-width: calc(1200px - (30px * 2));
 }
 
-main>.content .code-kvp>.code {
+main>.content .code-kvp>.code, span.code {
     font-family: monospace;
     font-size: 16px;
     background: wheat;
